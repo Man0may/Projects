@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Word Definition Extension",
+  "version": "1.0",
+  "description": "Highlights various banking terms on a webpage and provides definitions.",
+
+  "action": {
+    "default_icon": "logo.png",
+    "default_popup": "popup.html",
+    "default_title": "Word Definition Extension"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+
+}
+ 
